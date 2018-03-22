@@ -2,7 +2,7 @@ $(document).ready(function()
 {
     $('html').css('visibility', 'visible');
 
-    const open_key = 77; // M
+    const open_key = 79; // O key to open
     let open = false;
     let can_open = true;
     let my_id = -1;
