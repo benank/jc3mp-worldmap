@@ -31,7 +31,7 @@ function SyncPlayers(player)
     ({
         id: p.networkId,
         name: (p.escapedNametagName) ? p.escapedNametagName : p.name,
-        color: (player.freeroam) ? player.freeroam.colour : (player.color) ? player.color : '#878787',
+        color: (p.freeroam) ? p.freeroam.colour : (p.color) ? p.color : '#878787',
         x: p.position.x,
         z: p.position.z
     }))

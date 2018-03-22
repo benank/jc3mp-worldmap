@@ -73,7 +73,7 @@ $(document).ready(function()
         const x = ((parseInt(e.pageX - $('div.container').offset().left)) / $('div.container').width()) * 100;
         const z = ((e.pageY - $('div.container').offset().top) / $('div.container').height()) * 100;
 
-        jcmp.CallLocalEvent('teleport', x, z);
+        jcmp.CallLocalEvent('teleport', Math.max(Math.min(100, x), 0), Math.max(Math.min(100, z), 0));
         Close();
 
     })

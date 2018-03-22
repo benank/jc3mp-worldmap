@@ -61,7 +61,7 @@ img.bg
     position: absolute;
     border-radius: 1000px;
     border: 0.2vh solid white;
-    background: red;
+    background-color: red;
     font-size: 0.75vh;
     width: 0.75vh;
     height: 0.75vh;
