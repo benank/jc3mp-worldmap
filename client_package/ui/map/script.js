@@ -22,6 +22,9 @@ $(document).ready(function()
                 left: `${data.x}%`,
                 top: `${data.y}%`
             })
+
+            if (data.color) {players[data.id].css('background-color', data.color);}
+            if (data.name) {players[data.id].data('name', data.name);}
         }
         else // If the player is not on the map and they have a color
         {
