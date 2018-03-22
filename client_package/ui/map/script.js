@@ -16,6 +16,9 @@ $(document).ready(function()
     {
         if (players[data.id]) // If the player already is on the map
         {
+            if (data.color) {players[data.id].css('background-color', data.color);}
+            if (data.name) {players[data.id].data('name', data.name);}
+            
             if (data.id == my_id && !data.localplayer) {return;}
 
             players[data.id].css({
@@ -23,8 +26,6 @@ $(document).ready(function()
                 top: `${data.y}%`
             })
 
-            if (data.color) {players[data.id].css('background-color', data.color);}
-            if (data.name) {players[data.id].data('name', data.name);}
         }
         else // If the player is not on the map and they have a color
         {
